@@ -1,0 +1,9 @@
+<p>Length of Service sorted by Mechanics</p>
+<p><i>(Name - type - average time - ratio of average)</i><p>
+{% if result_list %}
+    {% for x in result_list %}
+    	{{ x }} <br>
+    {% endfor %}
+{% else %}
+    <p>No Result</p>
+{% endif %}
