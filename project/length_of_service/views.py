@@ -16,7 +16,7 @@ def length_of_service(request):
 	for rtype, avg in zip(types, national_averages):
 		n_average_records[rtype] = avg
 
-	result = calc.calculate_length_of_service(mechanics, services, types, n_average_records)
+	result = calc.calculate_length_of_service(mechanics, services, n_average_records)
 	
 	template = loader.get_template('length_of_service/index.html')
 	context = {'result_list': result,}
