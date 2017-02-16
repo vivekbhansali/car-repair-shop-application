@@ -33,7 +33,7 @@ To check the result, goto:
 ```
 0.0.0.0:80/length-of-service/get-all-results
 ```
-![](https://raw.githubusercontent.com/vivekbhansali/car-repair-shop-application/master/output.png =300X350)
+<img src="https://raw.githubusercontent.com/vivekbhansali/car-repair-shop-application/master/output.png" width="300" height="250">
 
 ## Test Cases
 There are 3 test cases in length-of-service/tests.py file
