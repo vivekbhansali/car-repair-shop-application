@@ -5,16 +5,9 @@ from .models import Workflow, RepairTypes
 from collections import defaultdict
 from django.template import loader
 
-def calculate_length_of_service(mechanics, services, types, n_average_records):
-	mechanics =  Workflow.objects.values_list('mechanic', flat=True).distinct()
-        types = RepairTypes.objects.values_list('repair_type', flat=True)
-        national_averages = RepairTypes.objects.values_list('national_averages', flat=True)
+def calculate_length_of_service(mechanics, services, n_average_records):
         result = []
-        n_average_records = {}
-        for rtype, avg in zip(types, national_averages):
-                n_average_records[rtype] = avg
-        services = Workflow.objects.all()
-        for mechanic in mechanics:
+	for mechanic in mechanics:
                 mechanic = mechanic.strip()
                 sum_records = defaultdict(int)
                 count_records = defaultdict(int)
