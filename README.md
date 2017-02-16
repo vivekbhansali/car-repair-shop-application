@@ -15,8 +15,8 @@ The seed file to populate data are <br />
 
 ### Command to populate the data into database
 ```
-mysql *db_name* < workflow_data.txt -u *username* -p *password*
-mysql *db_name* < repair_data.txt -u *username* -p *password*
+mysql db_name < workflow_data.txt -u username -p password
+mysql db_name < repair_data.txt -u username -p password
 ```
 
 ## To run the application:
@@ -33,7 +33,7 @@ To check the result, goto:
 ```
 0.0.0.0:80/length-of-service/get-all-results
 ```
-![alt tag](https://raw.githubusercontent.com/vivekbhansali/car-repair-shop-application/master/output.png =300X350)
+![](https://raw.githubusercontent.com/vivekbhansali/car-repair-shop-application/master/output.png =300X350)
 
 ## Test Cases
 There are 3 test cases in length-of-service/tests.py file
