@@ -1,7 +1,7 @@
 # Car Repair Shop Application
-Application for Car Repair Shop to calculate length of service for each mechanic
+Application to calculate length of service (LOS) for cars in a Car Repair Shop.
 
-The application uses Django Framework with MySQL database.
+The application uses Python Django Framework with MySQL database.
 
 ## MySQL Database Settings:
 You need to enter the name of database you want to use along with proper username and password.
@@ -25,7 +25,7 @@ mysql db_name < repair_data.sql -u username -p
 ```
 python manage.py runserver 0.0.0.0:80
 ```
-On your browser, you can go visit the entry point('Landing Page') for the application at,
+On your browser, you can visit the entry point('Landing Page') of the application at,
 ```
 0.0.0.0:80/length-of-service
 ```
@@ -64,28 +64,28 @@ There are Five test cases in *length-of-service/tests.py* file
    ```
    python manage.py test length_of_service.tests.CalculationTest.test_calculations_01
    ```
-OUTPUT:
-```
-Creating test database for alias 'default'...
+   **OUTPUT:**
+   ```
+   Creating test database for alias 'default'...
 
- ---Test 01--- 
+    ---Test 01--- 
 
-List of Workflow objects for this Test are
-[<Workflow: 12/5/2016,12/7/2016,Bob,B
->, <Workflow: 12/5/2016,12/6/2016,Bob,B
->, <Workflow: 12/5/2016,12/8/2016,Peter,A
->] 
+   List of Workflow objects for this Test are
+   [<Workflow: 12/5/2016,12/7/2016,Bob,B
+   >, <Workflow: 12/5/2016,12/6/2016,Bob,B
+   >, <Workflow: 12/5/2016,12/8/2016,Peter,A
+   >] 
 
-National Averages: 
-[('A', 1.0), ('B', 2.0)] 
+   National Averages: 
+   [('A', 1.0), ('B', 2.0)] 
 
-Expected Result:  ['Bob - B - 2 - 1.0', 'Peter - A - 4 - 0.3']
-Actual Result from the function:  ['Bob - B - 2 - 1.0', 'Peter - A - 4 - 0.3'] 
+   Expected Result:  ['Bob - B - 2 - 1.0', 'Peter - A - 4 - 0.3']
+   Actual Result from the function:  ['Bob - B - 2 - 1.0', 'Peter - A - 4 - 0.3'] 
 
-.
-----------------------------------------------------------------------
-Ran 1 test in 0.015s
+   .
+   ----------------------------------------------------------------------
+   Ran 1 test in 0.015s
 
-OK
-Destroying test database for alias 'default'...
-```
+   OK
+   Destroying test database for alias 'default'...
+   ```
