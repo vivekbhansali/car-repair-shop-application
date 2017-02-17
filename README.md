@@ -6,7 +6,7 @@ The application uses Django Framework with MySQL database.
 ## MySQL Database Settings:
 You need to enter the name of database you want to use along with proper username and password.
 
-All the settings can be changed in project/car_repair_shop/settings.py
+All the settings can be changed in *project/car_repair_shop/settings.py*
 
 ## Seed File:
 The seed file to populate data are,
@@ -21,7 +21,7 @@ mysql db_name < repair_data.sql -u username -p
 ```
 
 ## To run the application:
-(You can change the ip-address and port number if you want)
+(You can change the *ip-address* and *port* if you want)
 ```
 python manage.py runserver 0.0.0.0:80
 ```
@@ -32,38 +32,38 @@ On your browser, you can go visit the entry point('Landing Page') for the applic
 There are two types of Sorting provided,
 
 1. Length of services sorted by Mechanics
-```
-0.0.0.0:80/length-of-service/results-by-mechanics
-```
-<img src="https://raw.githubusercontent.com/vivekbhansali/car-repair-shop-application/master/output.png" width="400" height="500">
+   ```
+   0.0.0.0:80/length-of-service/results-by-mechanics
+   ```
+   <img src="https://raw.githubusercontent.com/vivekbhansali/car-repair-shop-application/master/output.png" width="400" height="500">
 
 2. Length of service sorted by Repair Types
-```
-0.0.0.0:80/length-of-service/results-by-repair-type
-```
+   ```
+   0.0.0.0:80/length-of-service/results-by-repair-type
+   ```
 
 ## Testing the Application:
 There are Five test cases in *length-of-service/tests.py* file
 
 1. Three test cases check Length of services calculations:
-```
-python manage.py test length_of_service.tests.CalculationTest
-```
+   ```
+   python manage.py test length_of_service.tests.CalculationTest
+   ```
 
 2. Two test cases check connections on Views
-```
-python manage.py test length_of_service.tests.ViewsTest
-```
+   ```
+   python manage.py test length_of_service.tests.ViewsTest
+   ```
 
 3. To run a all test cases
-```
-python manage.py test
-```
+   ```
+   python manage.py test
+   ```
 
 4. Running a Sample Test Case
-```
-python manage.py test length_of_service.tests.CalculationTest.test_calculations_01
-```
+   ```
+   python manage.py test length_of_service.tests.CalculationTest.test_calculations_01
+   ```
 OUTPUT:
 ```
 Creating test database for alias 'default'...
