@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 
 from django.db import models
 
-# Create your models here.
 class RepairTypes(models.Model):
 	repair_type = models.CharField(max_length=1)
 	description = models.CharField(max_length=30)
@@ -18,9 +17,8 @@ class Workflow(models.Model):
 	repair_type = models.CharField(max_length=1)
 
 	def __str__(self):
-        	s = str(self.dropoff + ',' + self.pickup + ',' + self.mechanic + ',' + self.repair_type)
+		s = str(self.dropoff + ',' + self.pickup + ',' + self.mechanic + ',' + self.repair_type)
 		return s + '\n'
 
 	class Meta:
 		db_table = "shop_workflow_fact"
-
