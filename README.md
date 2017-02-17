@@ -35,7 +35,7 @@ There are two types of Sorting provided,
    ```
    0.0.0.0:80/length-of-service/results-by-mechanics
    ```
-   <img src="https://raw.githubusercontent.com/vivekbhansali/car-repair-shop-application/master/output1.png" width="450" height="500">
+   <img src="https://raw.githubusercontent.com/vivekbhansali/car-repair-shop-application/master/output1.png" width="500" height="500">
 
 2. Length of service sorted by Repair Types
    ```
